@@ -6,7 +6,7 @@ function HoverableItem(props: any) {
 
   return (
     <div
-      className={"relative mil-item mil-item-" + id}
+      className={"relative hidden sm:block mil-item mil-item-" + id}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -22,7 +22,7 @@ function HoverableItem(props: any) {
         )}
         <div className={"mil-item-hover" + (isHovered ? " hover" : "")}>
           <div className="mil-plus-icon text-2xl">+</div>
-          <h6 className="mil-light mt-2">{label}</h6>
+          <h6 className="mil-light text-gray-800">{label}</h6>
         </div>
       </div>
     </div>

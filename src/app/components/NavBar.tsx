@@ -32,17 +32,19 @@ export default function NavBar() {
         <div className="col-start-1 col-span-12">
           <div className="flex items-center justify-between h-16">
             <div className="flex-shrink-0">
-              <img className="h-8" src="images/logo.svg" alt="Workflow" />
+              <img
+                className="h-8 logo"
+                src="images/logo.svg"
+                alt="Service.tech"
+              />
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 <a
                   href="#"
                   className={
-                    (dark
-                      ? "text-gray-300 hover:text-white"
-                      : "text-gray-800 hover:text-accent-500") +
-                    " px-3 py-2 rounded-md text-sm font-medium"
+                    (dark ? "text-gray-300" : "text-gray-800") +
+                    " hover:text-accent-500 px-3 py-2 rounded-md text-sm font-medium"
                   }
                 >
                   Home
@@ -51,10 +53,8 @@ export default function NavBar() {
                 <a
                   href="#"
                   className={
-                    (dark
-                      ? "text-gray-300 hover:text-white"
-                      : "text-gray-800 hover:text-accent-500") +
-                    " px-3 py-2 rounded-md text-sm font-medium"
+                    (dark ? "text-gray-300" : "text-gray-800") +
+                    " hover:text-accent-500 px-3 py-2 rounded-md text-sm font-medium"
                   }
                 >
                   About
@@ -63,10 +63,8 @@ export default function NavBar() {
                 <a
                   href="#"
                   className={
-                    (dark
-                      ? "text-gray-300 hover:text-white"
-                      : "text-gray-800 hover:text-accent-500") +
-                    " px-3 py-2 rounded-md text-sm font-medium"
+                    (dark ? "text-gray-300" : "text-gray-800") +
+                    " hover:text-accent-500 px-3 py-2 rounded-md text-sm font-medium"
                   }
                 >
                   Portfolio
@@ -77,10 +75,8 @@ export default function NavBar() {
                 <a
                   href="#"
                   className={
-                    (dark
-                      ? "text-gray-300 hover:text-white"
-                      : "text-gray-800 hover:text-accent-500") +
-                    " px-3 py-2 rounded-md text-sm font-medium"
+                    (dark ? "text-gray-300" : "text-gray-800") +
+                    " hover:text-accent-500 px-3 py-2 rounded-md text-sm font-medium"
                   }
                 >
                   Services

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-const MegaMenu = ({ dark }) => {
+const MegaMenu = (props: any) => {
+  let { dark } = props;
   const [isOpen, setIsOpen] = useState(false);
 
   return (

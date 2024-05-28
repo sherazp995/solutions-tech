@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 
-const Counter = ({ target, duration, reset }) => {
+const Counter = (props: any) => {
+  let { target, duration, reset } = props;
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -28,7 +29,8 @@ const Counter = ({ target, duration, reset }) => {
   return <span>{count}</span>;
 };
 
-const FunFactSection = ({ facts }) => {
+const FunFactSection = (props: any) => {
+  let { facts } = props;
   const sectionRef = useRef(null);
   const [inView, setInView] = useState(false);
 
@@ -66,7 +68,7 @@ const FunFactSection = ({ facts }) => {
     >
       <div className="col-span-12 col-start-1">
         <div className="flex flex-wrap -mx-4">
-          {facts.map((fact, index) => (
+          {facts.map((fact: any, index: number) => (
             <div key={index} className="w-full lg:w-1/4 md:w-1/2 px-4 mb-8">
               <div className="item text-center">
                 <h3>

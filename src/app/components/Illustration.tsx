@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-function HoverableItem({ id, title, content, label }) {
+function HoverableItem(props: any) {
+  let { id, title, content, label } = props;
   const [isHovered, setIsHovered] = useState(false);
 
   return (

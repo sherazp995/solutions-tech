@@ -7,7 +7,7 @@ export default function CanvasAnimation() {
     <>
       <canvas
         id="dotted-canvas"
-        className="bg-black fixed top-0 -z-10"
+        className="bg-black fixed top-0 h-screen w-screen -z-10"
       ></canvas>
       <Script src="js/canvasScript.js" />
     </>

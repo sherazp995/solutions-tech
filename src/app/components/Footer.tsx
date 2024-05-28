@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="py-16 text-white">
+    <footer className="py-16 text-white bg-accent-700">
       <div className="container mx-auto">
         <div className="flex flex-wrap">
           <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
@@ -89,9 +89,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-bottom mt-8 pt-4 border-t border-gray-700 text-center lg:text-left">
-          <p className="mb-4">
-            © 2024 Solutions Tech - All Rights Reserved
-          </p>
+          <p className="mb-4">© 2024 Solutions Tech - All Rights Reserved</p>
           <ul className="flex justify-center lg:justify-start space-x-4">
             <li>
               <a href="#" className="text-xl hover:text-gray-400">

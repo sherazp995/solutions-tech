@@ -17,7 +17,7 @@
 } */
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb)); */
   background: linear-gradient(
       to bottom,
       transparent,
@@ -50,6 +50,37 @@ body {
 }
 
 /* @import './css/globals.css'; */
+
+.funfact-section .item h3 {
+  color: #fbb132;
+  font-family: DM Sans, sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.funfact-section .col:nth-child(2) .item h3 {
+  color: #f97d7f;
+}
+
+.funfact-section .col:nth-child(3) .item h3 {
+  color: #7dc370;
+}
+
+.funfact-section .col:nth-child(4) .item h3 {
+  color: #8956b3;
+}
+.funfact-section .item h4 {
+  color: #525252;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.leading-tight {
+  font-size: 64px;
+}
 
 img {
   object-fit: cover;
@@ -97,7 +128,6 @@ h6 {
   font-weight: 800;
   position: absolute;
   z-index: -19;
-  color: #f2edf5;
   line-height: 145px;
 }
 
@@ -106,7 +136,6 @@ h6 {
   margin-bottom: 0;
   padding-top: 60px;
   font-weight: 600;
-  color: black;
 }
 
 .reaview {
@@ -155,7 +184,7 @@ h6 {
 }
 
 .about-right-content .title {
-  color: #233fd6;
+  color: #f57c00;
   font-family: Inter, sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -202,4 +231,165 @@ h6 {
   position: relative;
   overflow: visible !important;
   overflow-x: hidden !important;
+}
+
+.iq-testimonial-info {
+  display: flex;
+}
+
+.iq-testimonial-avtar {
+  z-index: 2;
+    flex-shrink: 0;
+}
+.iq-testimonial-avtar img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-top: 15%;
+  margin-left: auto;
+  border: 10px solid var(--white-color);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.iq-testimonial-details {
+  text-align: left;
+  padding: 50px 50px 50px 115px;
+  z-index: 1;
+  background-color: var(--white-color);
+  margin-bottom: 30px;
+  position: relative;
+  margin-left: -80px;
+  border-radius: var(--border-radius-box);
+}
+
+.xamin-post-ratings {
+  color: var(--primary-color);
+  font-size: var(--font-size-normal);
+  margin-bottom: 15px;
+}
+
+.xamin-post-ratings svg {
+  display: inline-block;
+  width: 16px;
+  fill: #f57c00;
+}
+
+.iq-testimonial-member {
+  margin-top: 32px;
+}
+
+.iq-testimonial-member .avtar-name {
+  display: flex;
+  align-items: baseline;
+}
+.iq-testimonial-member .iq-post-meta {
+  font-size: 14px;
+  margin-left: 5px;
+  text-transform: capitalize;
+}
+
+.iq-testimonial-quote {
+  width: 15%;
+  position: absolute;
+  right: 30px;
+  bottom: 15px;
+}
+
+.iq-testimonial-quote svg {
+  fill: #eff1fe;
+}
+
+.mil-illustration-1 {
+  position: relative;
+  height: 280px;
+}
+
+.mil-illustration-1 .mil-item {
+  position: absolute;
+}
+
+.mil-illustration-1 .mil-item.mil-item-1 {
+  top: 0;
+  left: 30px;
+}
+
+.mil-illustration-1 .mil-item.mil-item-2 {
+  top: 110px;
+  right: 0;
+}
+
+.mil-illustration-1 .mil-item.mil-item-3 {
+  bottom: 0;
+  left: 30%;
+}
+
+.mil-illustration-1 .mil-item .mil-plus {
+  position: relative;
+}
+
+.mil-illustration-1 .mil-item .mil-plus .mil-hover-window {
+  position: absolute;
+  pointer-events: none;
+  transform: translateY(-10px) scale(.98);
+  bottom: 75px;
+  left: -105px;
+  box-shadow: 0 0 40px 0 rgba(18, 24, 32, .1);
+  background-color: #fff;
+  border-radius: 5px;
+  width: 260px;
+  transition: .4s cubic-bezier(0,0,.3642,1);
+}
+
+.mil-illustration-1 .mil-item .mil-plus .mil-hover-window .mil-window-content {
+  padding: 30px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.mil-dark {
+  color: #121820;
+}
+
+.mil-divider {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(18, 24, 32, .1);
+  position: relative;
+}
+
+.mil-illustration-1 .mil-item .mil-plus .mil-item-hover {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mil-illustration-1 .mil-item .mil-plus .mil-item-hover .mil-plus-icon {
+  background-color: hsla(0, 0%, 100%, .1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  width: 50px;
+  margin-right: 15px;
+  font-size: 32px;
+  font-weight: 200;
+  color: #fff;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .4s cubic-bezier(0,0,.3642,1);
+}
+
+.mil-illustration-1 .mil-item .mil-plus .mil-item-hover .mil-light {
+  color: #fff;
+}
+.mil-illustration-1 .mil-item .mil-plus  .mil-item-hover.hover .mil-light {
+  color: #f57c00 !important;
+}
+
+.mil-illustration-1 .mil-item .mil-plus  .mil-item-hover.hover .mil-plus-icon {
+  background-color: #f57c00;
+  color: #fff;
 }

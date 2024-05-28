@@ -15,7 +15,7 @@ function canvasAnimation() {
     return Math.floor(255 * Math.random() + i);
   }
   function h(i, t, o) {
-    return !0 === a ? "rgba(255,255,255, 0.8)" : "rgba(255, 255, 255, 0.8)";
+    return !0 === a ? "rgba(255,255,255, 0.8)" : "rgba(245,124,0, 0.8)";
   }
   function s(i, t, o, n) {
     return (i * t + o * n) / (t + n);

@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Script src="js/jquery.js" />
+      <Script src="/js/jquery.js" />
       <meta charSet="utf-8" />
       <body className={inter.className}>
         <NavBar />

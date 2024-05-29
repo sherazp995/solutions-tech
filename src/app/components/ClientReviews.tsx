@@ -16,6 +16,8 @@ export default function ClientReviews() {
       setWidth(window.innerWidth);
     };
 
+    handleResize();
+
     window.addEventListener("resize", handleResize);
 
     return () => {

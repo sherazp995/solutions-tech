@@ -8,9 +8,9 @@ export default function Footer() {
         <div className="flex flex-wrap">
           <div className="w-full md:w-1/2 lg:w-6/12 px-4 mb-8">
             <div className="footer-logo w-full md:w-1/2">
-              <a href="index.html">
-                <img alt="img" src="images/logo.svg" className="h-8" />
-              </a>
+              <Link href={"/"}>
+                <img alt="img" src="/images/logo.svg" className="h-8" />
+              </Link>
               <p className="mt-4">
                 Aliquam porttitor mauris sit amet orci. Aenean dignissim
                 pellentesque felis. Morbi in sem quis dui placerat ornare.
@@ -20,7 +20,7 @@ export default function Footer() {
               <Link href={"https://facebook.com"} target="_blank">
                 <Image
                   alt="facebook"
-                  src={"images/facebook.svg"}
+                  src={"/images/facebook.svg"}
                   height={30}
                   width={30}
                 />
@@ -28,7 +28,7 @@ export default function Footer() {
               <Link href={"https://linkedin.com"} target="_blank">
                 <Image
                   alt="linkedin"
-                  src={"images/linkedin.svg"}
+                  src={"/images/linkedin.svg"}
                   height={30}
                   width={30}
                 />
@@ -36,7 +36,7 @@ export default function Footer() {
               <Link href={"https://instagram.com"} target="_blank">
                 <Image
                   alt="instagram"
-                  src={"images/instagram.svg"}
+                  src={"/images/instagram.svg"}
                   height={30}
                   width={30}
                 />
@@ -44,7 +44,7 @@ export default function Footer() {
               <Link href={"tel:+12345678910"} target="_blank">
                 <Image
                   alt="tel"
-                  src={"images/phone-solid.svg"}
+                  src={"/images/phone-solid.svg"}
                   height={30}
                   width={30}
                 />
@@ -52,7 +52,7 @@ export default function Footer() {
               <Link href={"mailto:info@solution.tech"} target="_blank">
                 <Image
                   alt="email"
-                  src={"images/envelope-solid.svg"}
+                  src={"/images/envelope-solid.svg"}
                   height={30}
                   width={30}
                 />

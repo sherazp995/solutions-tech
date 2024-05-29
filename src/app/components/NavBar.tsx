@@ -25,7 +25,7 @@ export default function NavBar() {
       <nav
         ref={navRef}
         className={
-          (dark ? "" : "bg-white shadow-xl") +
+          (dark ? "bg-accent-800" : "bg-white shadow-xl") +
           " design-grid sticky top-0 left-0 right-0 z-50"
         }
       >
@@ -34,7 +34,7 @@ export default function NavBar() {
             <div className="flex-shrink-0">
               <img
                 className="h-8 logo"
-                src="images/logo.svg"
+                src="/images/logo.svg"
                 alt="Service.tech"
               />
             </div>
